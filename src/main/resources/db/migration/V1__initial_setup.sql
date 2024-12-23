@@ -1,0 +1,27 @@
+-- V1__initial_setup.sql
+CREATE TABLE accounts (
+                          id UUID PRIMARY KEY,
+                          first_name VARCHAR(255),
+                          last_name VARCHAR(255),
+                          email VARCHAR(255) UNIQUE NOT NULL,
+                          password VARCHAR(255),
+                          role VARCHAR(255),
+                          phone VARCHAR(255),
+                          photo TEXT,
+                          profile_cover TEXT,
+                          about TEXT,
+                          city VARCHAR(255),
+                          country VARCHAR(255),
+                          status_code VARCHAR(255),
+                          reg_date TIMESTAMP WITH TIME ZONE,
+                          birth_date TIMESTAMP WITH TIME ZONE,
+                          message_permission VARCHAR(255),
+                          last_online_time TIMESTAMP WITH TIME ZONE,
+                          emoji_status VARCHAR(255),
+                          created_on TIMESTAMP WITH TIME ZONE,
+                          updated_on TIMESTAMP WITH TIME ZONE,
+                          deletion_timestamp TIMESTAMP WITH TIME ZONE,
+                          deleted BOOLEAN,
+                          online BOOLEAN,
+                          blocked BOOLEAN
+);
